@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab One
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <!-- approxItemHeight="320px" --> 
+      <ion-virtual-scroll [items]="registers">
+        <ion-item *virtualItem="let register;" class="ion-item-border" lines="none"  >
+          <ion-thumbnail slot="start">
+            <!-- <ion-img [src]="register.thumbnailUrl"></ion-img> -->
+            <img-loader [src]="register.thumbnailUrl" useImg (load)="onImageLoad($event)"></img-loader>
+          </ion-thumbnail>
+          <ion-label text-wrap text-center class="card-title"> {{register.title}} </ion-label>
+          <ion-label>{{ register.title }}</ion-label>
+        </ion-item>
+      </ion-virtual-scroll>
+    </ion-list>
+</ion-content>
