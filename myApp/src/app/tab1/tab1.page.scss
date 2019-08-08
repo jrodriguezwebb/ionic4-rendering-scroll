@@ -2,3 +2,29 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.example-viewport {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.example-item {
+  height: 610px;
+  border: 1px solid black;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.example-card {
+  max-width: 350px;
+  margin: auto;
+  height: 610px;
+  margin-top: 10px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

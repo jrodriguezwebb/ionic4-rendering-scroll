@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import { IonicImageLoader } from 'ionic-image-loader';
 import {MatCardModule} from '@angular/material/card';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {MatCardModule} from '@angular/material/card';
     FormsModule,
     IonicImageLoader,
     MatCardModule,
-    RouterModule.forChild([{ path: '', component: Tab1Page }])
+    RouterModule.forChild([{ path: '', component: Tab1Page }]),
+    ScrollingModule
   ],
   declarations: [Tab1Page]
 })
