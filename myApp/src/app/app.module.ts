@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicImageLoader } from 'ionic-image-loader';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,8 @@ import { WebView } from '@ionic-native/ionic-webview/ngx';
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
-    IonicImageLoader.forRoot()
+    IonicImageLoader.forRoot(),
+    ScrollingModule
   ],
   providers: [
     WebView,
